@@ -1,0 +1,43 @@
+# Commit Message Convention
+
+## Format
+
+```
+<type>(<scope>): <subject>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+```
+
+## Types
+
+| Type     | Description                      |
+| -------- | -------------------------------- |
+| feat     | New feature                      |
+| fix      | Bug fix                          |
+| docs     | Documentation changes            |
+| style    | Formatting, linting fixes        |
+| refactor | Code restructuring               |
+| test     | Test additions/modifications     |
+| chore    | Build process or tooling changes |
+
+## Examples
+
+```
+feat(simulink): add neural network block
+
+Implements a trainable neural network block with configurable layers.
+Supports both feedforward and recurrent architectures.
+
+Closes #45
+```
+
+```
+fix(core): handle empty matrix inputs
+
+Fixes indexing error when empty matrices are passed to calculate().
+Added validation and unit tests.
+
+BREAKING CHANGE: Now throws MException instead of warning.
+```
